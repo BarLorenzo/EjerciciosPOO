@@ -116,5 +116,10 @@ def main():
 
 
 
+    print("7. Atributo privado y name mangling")
+    print("En __dict__ aparece como _CuentaUsuario__password_hash")
+    print("Acceso con name mangling:", cuenta1._CuentaUsuario__password_hash)
+    print("Es una protección por convención para evitar accesos por accidente.")
+
 if __name__ == "__main__":
     main()
